@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+/* the props */
+@import "open-props/style";
+
+/* optional imports that use the props */
+@import "open-props/normalize";
+@import "open-props/buttons";
+
+/* angular colors */
+:root {
+  --bright-blue: oklch(51.012% 0.27448 263.852);
+  --electric-violet: oklch(53.18% 0.28 296.97);
+  --french-violet: oklch(47.66% 0.246 305.88);
+  --vivid-pink: oklch(69.02% 0.277 332.77);
+  --hot-red: oklch(61.42% 0.238 15.34);
+  --orange-red: oklch(63.32% 0.24 31.68);
+
+  --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+    180deg,
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
+
+  --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+    90deg,
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
+
+  --panel-gradient: linear-gradient(
+    45deg,
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
+
+  --blue-0: oklch(0.51 0.27 263.84);
+  --blue-1: oklch(0.52 0.23 281.65);
+  --purple-0: oklch(0.53 0.28 296.98);
+  --pink-0: oklch(0.69 0.28 332.77);
+  --red-0: oklch(0.6 0.24 8.14);
+  --red-1: oklch(0.61 0.24 15.35);
+  --red-2: oklch(0.63 0.24 31.68);
+
+  --logo-gradient: linear-gradient(
+    var(--logo-gradient-angle),
+    var(--purple-0) 0%,
+    var(--pink-0) 20%,
+    var(--red-0) 80%,
+    var(--red-1) 100%
+  );
+}
+
+@keyframes rotate-logo-gradient {
+  to {
+    --logo-gradient-angle: 360deg;
+  }
+}
+
+@property --logo-gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}

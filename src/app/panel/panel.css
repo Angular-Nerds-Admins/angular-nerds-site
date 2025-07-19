@@ -1,0 +1,33 @@
+:host {
+  --_border: 3px;
+  display: block;
+  position: relative;
+  padding: var(--size-3);
+  border-radius: var(--radius-3);
+  width: fit-content;
+  background: var(--surface-2);
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: solid var(--_border) transparent;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: calc(-1 * var(--_border));
+    border-radius: inherit;
+    background-image: linear-gradient(
+      var(--logo-gradient-angle),
+      var(--purple-0) 0%,
+      var(--pink-0) 20%,
+      var(--red-0) 80%,
+      var(--red-1) 100%
+    );
+    animation: rotate-logo-gradient linear 6s infinite;
+  }
+}
+
