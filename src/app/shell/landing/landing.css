@@ -7,5 +7,17 @@
 
 
 img {
-  height: 80vh;
+  height: 30vh;
+}
+h1 {
+  font-size: 4rem;
+  background: var(--red-to-pink-to-purple-horizontal-gradient);
+  background-clip: text;
+  color: transparent;
+  margin: var(--size-3) 0 var(--size-1) 0;
+}
+
+q {
+  margin-block-start: var(--size-3);
+  max-inline-size: var(--size-content-2);
 }
