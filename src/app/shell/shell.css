@@ -11,6 +11,25 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 650px) {
+  :host {
+    grid-template-rows: 4lh 1fr 1lh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "content"
+      "footer";
+  }
+
+  aside {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
 header {
   grid-area: header;
   display: flex;
