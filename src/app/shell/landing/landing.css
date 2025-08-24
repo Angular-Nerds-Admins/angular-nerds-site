@@ -14,7 +14,9 @@ img {
     }
   }
 }
-
+p {
+  padding-inline: var(--size-3);
+}
 h1 {
   font-size: 4rem;
   background: var(--red-to-pink-to-purple-horizontal-gradient);
