@@ -1,6 +1,4 @@
-// import { bootstrapApplication } from '@angular/platform-browser';
-// import { appConfig } from './app/app.config';
-// import { App } from './app/app';
+
 
 document.addEventListener('mouseover', async (event) => {
   const { bootstrapApplication } = await import('@angular/platform-browser');

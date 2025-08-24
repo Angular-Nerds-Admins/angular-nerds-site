@@ -1,19 +1,23 @@
-<header>
-  <img src="/assets/an-logo.svg" alt="Angular Nerds Logo" width="100" />
-  <h1>Angular-Nerds</h1>
-</header>
-<aside>
-  <!-- todo: move this into its own component -->
-  <an-panel>
-    <ul>
-      <li><a [routerLink]="['/']">Home</a></li>
-      <li><a [routerLink]="['/login']">Login</a></li>
-    </ul>
-  </an-panel>
-</aside>
-<main>
-  <router-outlet />
-</main>
-<footer>
-  <p>&copy; 2025 Angular Nerds</p>
-</footer>
+@defer (hydrate never) {
+
+  <header>
+    <img src="/assets/an-logo.svg" alt="Angular Nerds Logo" width="100" />
+    <h1>Angular-Nerds</h1>
+  </header>
+  <aside>
+    <!-- todo: move this into its own component -->
+    <an-panel>
+      <ul>
+        <li><a [routerLink]="['/']">Home</a></li>
+        <li><a [routerLink]="['/login']">Login</a></li>
+      </ul>
+    </an-panel>
+  </aside>
+  <main>
+    <router-outlet />
+  </main>
+  <footer>
+    <p>&copy; 2025 Angular Nerds</p>
+  </footer>
+
+}
